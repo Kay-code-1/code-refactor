@@ -4,7 +4,8 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 
 /*Element Selectors*/
 
@@ -17,7 +18,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
@@ -35,11 +35,10 @@ header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
-li {
+header li {
     display: inline;
     margin-left: 25px;
     text-align: right;
@@ -58,26 +57,23 @@ img{
     display: flex;
     padding: 5px;
     max-width: 100%;
-    height: fit-content;
-    margin: auto;
+    height: auto;
+    margin: 0 0 10px 0;
 }
 figcaption{
     text-align: center;
-    font-size: larger;
+    font-size: small;
     font-weight: bold;
     padding: 20px;
     background-color: #0072bb;
     color: #ffffff;
-    margin: 20px 0 20px 0;
-}
-
-figcaption h2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px;
     font-size: 36px;
 }
 
 .footer {
     padding: 30px;
+    margin: 20px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
@@ -86,7 +82,6 @@ figcaption h2{
 .footer h2 {
     font-size: 20px;
 }
-
 
 /*Class Selectors*/
 
@@ -110,7 +105,6 @@ figcaption h2{
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
@@ -133,23 +127,51 @@ figcaption h2{
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
-}
-
-.benefit-lbc {
-    margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-lbc h3 {
+.benefit-type {
+    margin-bottom: 32px;
+}
+
+.benefit-type h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-lbc img {
+.benefit-type img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/*Responsive Web Design media queries*/
+
+/*For mobile devices*/
+
+@media only screen and (max-width: 768px) {
+    header li {
+        display: block;
+    }
+
+    .services-block {
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    .services {
+        padding: 20px;
+        height: 100%;
+    }
+
+    .services img {
+        max-height: 100% !important;
+    }
+    
+    .benefits {
+        width: 100%;
+        margin: 0 !important;
+    }
+
+}
