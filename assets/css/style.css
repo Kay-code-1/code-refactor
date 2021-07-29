@@ -1,8 +1,12 @@
+/*Universal Selectors*/
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
+/*Element Selectors*/
 
 body {
     background-color: #d9dcd6;
@@ -72,7 +76,19 @@ figcaption h2{
     font-size: 36px;
 }
 
-/*Content styling*/
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+
+
+/*Class Selectors*/
 
 .services-block {
     width: 75%;
@@ -137,15 +153,3 @@ figcaption h2{
     max-width: 150px;
 }
 
-/*Footer styling */
-
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-.footer h2 {
-    font-size: 20px;
-}
