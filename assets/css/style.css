@@ -60,6 +60,7 @@ img{
     height: auto;
     margin: 0 0 10px 0;
 }
+
 figcaption{
     text-align: center;
     font-size: small;
@@ -84,12 +85,6 @@ figcaption{
 }
 
 /*Class Selectors*/
-
-.services-block {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
 
 .float-left {
     float: left;
@@ -116,6 +111,12 @@ figcaption{
 .services h2 {
     margin-bottom: 20px;
     font-size: 36px;
+}
+
+.services-block {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
 }
 
 /*sidebar styling*/
